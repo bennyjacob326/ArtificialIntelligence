@@ -37,5 +37,5 @@ frontier.getAll()
 # average depth: 6.04
 # average number pushed: 1177.26
 # average number popped: 678.3
-#search(4) wasn't possible
+# search(4) wasn't possible
 
