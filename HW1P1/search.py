@@ -11,6 +11,7 @@ def search(n):
         s = frontier.remove(f)
         f[4] = f[4] + 1
         if state.is_target(s):
+            print("depth of this one is ", f[1])
             frontier.adder(f[4], f[5], f[1])
             return [s, f[1]]
         ns = state.get_next(s)
