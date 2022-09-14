@@ -63,5 +63,5 @@ printIt()
 # average number popped: 498.38
 
 # observations:
-# while the runtime is reduced significantly by using a weighted A* search,
+# while the runtime was reduced significantly by using a weighted A* search,
 # the optimality of the solution did not change much
