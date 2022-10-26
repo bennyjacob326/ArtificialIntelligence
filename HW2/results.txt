@@ -1,0 +1,47 @@
+british museum:
+average number of moves: 193264.15
+average number of iterations: 1546113.2
+min moves: 4176
+max moves: 12290928
+min iterations: 522
+max iterations: 1536366
+
+an iteration was every time the board was reset, while a move was every time a queen was put down.
+Hence, the amount of moves is 8x the amount of iterations
+
+dfs:
+average number of moves: 113.0
+average number of iterations: 982.0
+min moves: 113
+max moves: 113
+min iterations: 982
+max iterations: 982
+
+An iteration followed the way that was predefined, while the amount of moves was how many times the queen was moved.
+
+forward checking:
+average number of moves 263.0
+average number of iterations 97.0
+min moves: 97
+max moves: 97
+min iterations: 263
+max iterations: 263
+
+my forward checking placed queens only where it was known that there's nothing interfering with it. If there were no
+possible spots in the row, it backtracked. It also backtracked where, if based on the new placement, there was a later
+row that wouldn't have a slot to put a queen down.
+An iteration was where it moved to the next row to attempt to place a queen, while a move was each time a queen was
+placed.
+
+heuristic repair:
+average number of moves 23.48
+average number of iterations 23.48
+min moves: 4
+max moves: 81
+min iterations: 4
+max iterations: 81
+
+my heuristic repair randomly picked a row and checked the amount of conflict there were in each possible spot,
+and when there were zero total conflicts, the puzzle is solved
+An iteration is each time it was attempted to lower the amount of conflicts, which is the same as the amount of moves
+
